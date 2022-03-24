@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_challege"
+    app:startDestination="@id/screenSatuFragment">
+
+    <fragment
+        android:id="@+id/screenSatuFragment"
+        android:name="andlima.hafizhfy.challengetiga.ScreenSatuFragment"
+        android:label="fragment_screen_satu"
+        tools:layout="@layout/fragment_screen_satu" >
+        <action
+            android:id="@+id/action_screenSatuFragment_to_screenDuaFragment"
+            app:destination="@id/screenDuaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenDuaFragment"
+        android:name="andlima.hafizhfy.challengetiga.ScreenDuaFragment"
+        android:label="fragment_screen_dua"
+        tools:layout="@layout/fragment_screen_dua" >
+        <action
+            android:id="@+id/action_screenDuaFragment_to_screenTigaFragment"
+            app:destination="@id/screenTigaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenTigaFragment"
+        android:name="andlima.hafizhfy.challengetiga.ScreenTigaFragment"
+        android:label="fragment_screen_tiga"
+        tools:layout="@layout/fragment_screen_tiga" >
+        <action
+            android:id="@+id/action_screenTigaFragment_to_screenEmpatFragment2"
+            app:destination="@id/screenEmpatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenEmpatFragment"
+        android:name="andlima.hafizhfy.challengetiga.ScreenEmpatFragment"
+        android:label="fragment_screen_empat"
+        tools:layout="@layout/fragment_screen_empat" >
+        <action
+            android:id="@+id/action_screenEmpatFragment_to_screenTigaFragment"
+            app:destination="@id/screenTigaFragment" />
+    </fragment>
+</navigation>

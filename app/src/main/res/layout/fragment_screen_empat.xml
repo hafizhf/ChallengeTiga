@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScreenEmpatFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Screen 4"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et_usia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="@string/et_masukkan_usia"
+            android:inputType="number"
+            android:padding="10dp"
+            android:background="@drawable/rounded"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/et_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="@string/et_masukkan_alamat"
+            android:padding="10dp"
+            android:inputType="text"
+            android:background="@drawable/rounded"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/et_pekerjaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="@string/et_masukkan_pekerjaan"
+            android:padding="10dp"
+            android:inputType="text"
+            android:background="@drawable/rounded"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/btn_backtoscreen3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:text="@string/back_to_screen_3"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
